@@ -1,0 +1,46 @@
+0. input cmd :  d: -> cd thư mục muốn đến , quya lại thì cd ..
+
+1. Creat Email ,username ,pass
+	check : git config --list
+	creat name : git config --global user.usernam name
+	creat email: git config --global user.email your_email
+		check email : git config user.email
+	creat password : git config --global user.password you_pass
+
+2. Delete username , email,password 
+	delete email: git config --global --unset user.email
+	delete password : git config --global --unset user.password
+	delete username : git config --global --unset user.username
+
+3.clone một source nào đó trên git và rename file
+	- clone no rename : git clone link
+	- clone and rename : git clone link new_name
+	- pull : tải source , map với các file đang có trong project
+
+4. Creat track a repository 
+	input file you  can follow , type : git init
+
+5. Lệnh git status 
+	- check status files changes 
+	- command : git status
+	- if changes  , you could comand : git add .  
+
+6. Lệnh git add
+	- git add .  : đưa file vào trạng thái chờ
+	- git add -u : thêm những thay đổi của files cũ , ko quan tâm file mới
+	- git add -A : thêm vào all file mới cũ để chuẩn bị commit 
+	- commit : xác nhận thực hiện hành động lưu lại lịch sử một cách hoàn chỉnh
+	
+7.Lệnh git commit  : đưa file vào vùng sẵn sàng push
+	- git commit -m "messager we are changed" : xác nhận thay đổi  trước đó cần add -A
+	-  lệnh kết hợp : git commit -a -m "thông điệp"
+
+8.Creat repository and push up remote repository
+	- git init  : creat follow
+	- git add namefile.tail   ( * - n )
+	- git commit -m "thôg điệp change" ( * - n )
+	- git branch -M main  
+	- git remote add origin  link.git  
+	- git push -u origin main  ( * - n )
+9.  ssh-keygen
+	
